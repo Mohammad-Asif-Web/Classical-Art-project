@@ -1,0 +1,204 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+}
+/*=default font size is 16 px, 
+but we converted it to rem, 
+then coverted to percent,and its 
+used in html attribute below=*/
+html{
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body{
+	text-rendering: optimizeLegibility;
+
+}
+
+.fa-minus{
+	font-size: 15px;
+	color: #666666;
+	transform: rotate(90deg);
+}
+
+.top{
+	width: 100%;
+	height: 5px;
+	background: #333333;
+}
+
+/*======HEADER SECTION========*/
+.header{
+	width: 100%;
+	height: auto;
+	background: #d5ddde9c;
+}
+.container{
+	padding: 20px;
+}
+.container .row{
+	display: flex;
+	justify-content: space-between;
+}
+.row .info{
+	display: flex;
+	color: #666666;
+}
+.row .info p{
+	font-size: 12px;
+}
+
+.search{
+
+}
+.search input{
+	position: relative;
+	
+	width: 200px;
+	height: auto;
+	background: #4b4b4b;
+	padding: 7px;
+	border-radius: 12%;
+	outline: none;
+	color: #fff;
+}
+.search i{
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	width: 20px;
+	height: 20px;
+	padding: 4px;
+	background: #2c2c2c;
+	border-radius: 50%;
+	color: #fff;
+	text-align: center;
+}
+
+/*======NAVIGATION SECTION========*/
+.navigation{
+	width: 100%;
+	height: auto;
+	background: #f3f6f4;
+}
+.left{
+	color: #505050;
+}
+.left h1{
+	font-size: 36px;
+	font-weight: 200;
+	font-style: italic;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.nav .navbar li{
+	display: inline-block;
+	padding: 5px;
+}
+.nav .navbar li a{
+	font-size: 25px;
+	color: #666666;
+}
+.nav .navbar li i{
+	margin-left: 7px;
+}
+
+/*=======GALLERY SECTION=========*/
+.gallery{
+	width: 100%;
+	height: auto;
+	background: #ebebeb;
+}
+.div{
+	display: flex;
+	justify-content: space-around;
+
+}
+.div .div1{
+	width: 10%;
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-gap: 20px 20px;
+}
+.div .div1 .pic{
+	width: 80px;
+	height: 80px;
+	background: silver;
+	text-align: center;
+	align-items: center;
+
+}
+.pic img{
+	align-items: center;
+	padding: 10px;
+	
+}
+
+.div .div2{
+	width: 70%;
+	margin-left: 1%;
+	position: relative;
+	text-align: center;
+}
+.div2 img{
+	position: absolute;
+	left: 0;
+	top: 0;
+
+}
+
+/*======= SECTION=========*/
+
+.text{
+	width: 100%;
+	height: 300px;
+	background: #ebebeb;
+}
+.sub-text{
+	text-align: center;
+	display: flex;
+}
+.text-cont{
+	position: relative;
+	width: 100%
+	height: 100%;
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: #d7d7d7;
+  font-weight: bold;
+  font-size: 70px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.main-text{
+	position: absolute;
+	top: 20%
+	left: 50%;
+	font-size: 40px;
+	text-align: center;
+	
+}
