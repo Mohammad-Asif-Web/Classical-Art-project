@@ -123,6 +123,7 @@ body{
 	display: grid;
 	grid-template-columns: auto auto;
 	grid-gap: 20px 20px;
+	z-index: 10000;
 }
 .div .div1 .pic{
 	width: 80px;
@@ -140,14 +141,11 @@ body{
 
 .div .div2{
 	width: 70%;
-	margin-left: 1%;
-	position: relative;
-	text-align: center;
-}
-.div2 img{
-	position: absolute;
-	left: 0;
-	top: 0;
+	display: inline-block;
+	background: url(a.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+
 
 }
 
